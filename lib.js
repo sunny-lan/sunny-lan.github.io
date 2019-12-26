@@ -10,10 +10,10 @@ function getCoords(elem) { // crossbrowser version
     var clientTop = docEl.clientTop || body.clientTop || 0;
     var clientLeft = docEl.clientLeft || body.clientLeft || 0;
 
-    var top  = box.top +  scrollTop - clientTop;
+    var top = box.top + scrollTop - clientTop;
     var left = box.left + scrollLeft - clientLeft;
 
-    return { top: Math.round(top), left: Math.round(left) };
+    return {top: Math.round(top), left: Math.round(left)};
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     window.onscroll = function () {
         if (window.pageYOffset >= sticky) {
-            document.body.style.paddingTop = h-10 + 'px';
+            document.body.style.paddingTop = h - 10 + 'px';
             navbar.classList.add("sticky")
         } else {
             document.body.style.paddingTop = 0;
@@ -61,8 +61,9 @@ document.addEventListener("DOMContentLoaded", function () {
             }
             tab.onclick = function () {
                 // console.log("re");
+                const intro = document.getElementById('intro-block');
                 window.scrollTo({
-                    top: getCoords(tabset).top,
+                    top: getCoords(intro).top + intro.clientHeight - tabset.clientHeight,
                     left: 0,
                     behavior: 'smooth'
                 });

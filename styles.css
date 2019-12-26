@@ -146,7 +146,7 @@ body{
     margin: 0;
 }
 
-.intro-block{
+#intro-block{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -158,7 +158,7 @@ body{
     width: 100% ;
 }
 
-.intro-block > .bigger-background{
+#intro-block > .bigger-background{
     background: url("/images/temp-bg.jpg");
 }
 

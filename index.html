@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Welcome to Sunny Lan!</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Inria+Serif&display=swap" rel="stylesheet">
     <link rel="icon"
           type="image/png"
           href="favicon.ico">
+    <script src="/lib.js"></script>
 </head>
 <body>
 
@@ -37,7 +39,7 @@
     </ul>
 </div>
 
-<div class="tabs">
+<div id="navbar" class="tabs">
     <div class="tab">About me/Skills</div>
     <div class="tab">Projects</div>
     <div class="tab">Job experience</div>
@@ -46,11 +48,10 @@
 
 <div class="info-blocks">
     <div class="about-me-block">
+        <a id="about-me"></a>
         <h1>About me</h1>
         <p>
-            I'm a first year studying at UWaterloo Software Engineering.
-            I enjoy writing software all in shapes and forms, but I'm mainly interested
-            in web and game development.
+            I'm a student at UWaterloo Software Engineering.
         </p>
         <p>
             I am experienced with many web technologies, and multiple aspects of web development, including design,
@@ -64,29 +65,45 @@
     </div>
 
     <div class="skills-block">
+        <a id="skills"></a>
         <h1>Skills</h1>
 
-        <ul>
-            <li>Java</li>
+        <ul class="skills-list">
+            <li class="skill">
+                Java
+                <div class="skill-meter">6 years</div>
+            </li>
+
             <li>
-                Javascript
-                <ul>
-                    <li>Node.js</li>
-                    <li>Typescript</li>
-                    <li>React.js</li>
-                    <li>Redis</li>
-                    <li>React native</li>
+                <div class="collapsible skill">
+                    <div class="arrow-icon pixel-image"></div>
+                    Web development
+                    <div class="skill-meter" style="background-size: 95%">4 years</div>
+                </div>
+                <ul class="javascript-skills-list">
+                    <li class="skill">Node.js - 3 years</li>
+                    <li class="skill">Typescript - 1 year</li>
+                    <li class="skill">React.js - 1 year</li>
+                    <li class="skill">Redis</li>
+                    <li class="skill">React native - 4 months</li>
+                    <li class="skill">PHP and SQL - 1 year
+                    </li>
                 </ul>
             </li>
-            <li>PHP</li>
-            <li>SQL (mainly MySQL)</li>
-            <li>Unity (with C#)</li>
-            <li>C++ (contest programming)</li>
-            <li>OpenCV (with Python)</li>
+            <li class="skill">Unity (C#)
+                <div class="skill-meter" style="background-size: 40%">4 months</div>
+            </li>
+            <li class="skill">C++
+                <div class="skill-meter" style="background-size: 80%">3 years</div>
+            </li>
+            <li class="skill">OpenCV (Python)
+                <div class="skill-meter" style="background-size: 50%">6 months</div>
+            </li>
         </ul>
     </div>
 
     <div class="projects-block">
+        <a id="projects"></a>
         <h1>Projects</h1>
         <ul>
             <li>
@@ -151,6 +168,7 @@
 
 
     <div class="experience-block">
+        <a id="experience"></a>
         <h1>Job Experience</h1>
         <ul class="experience-list">
             <li>
@@ -179,6 +197,7 @@
     </div>
 
     <div class="awards-block">
+        <a id="awards"></a>
         <h1>Awards</h1>
         <ul >
             <li>
@@ -209,7 +228,14 @@
         </ul>
     </div>
 
+
+    <div class="about-block">
+        <h1>About this site</h1>
+        <span class="sub-text">Designed by Sunny Lan | 2019</span>
+        <p></p>
+    </div>
 </div>
+
 
 </body>
 </html>

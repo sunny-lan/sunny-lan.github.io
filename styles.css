@@ -32,6 +32,10 @@ a{
     text-decoration: none;
 }
 
+.inactive{
+    display: none;
+}
+
 .link-list a{
     color: white;
 }
@@ -42,6 +46,7 @@ a{
     color: antiquewhite;
     font-weight: bold;
 }
+
 p{
     max-width: 600px;
 }
@@ -100,8 +105,6 @@ p{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 20px;
-    font-family: bit5x5, fantasy;
 }
 
 .tab{
@@ -189,3 +192,71 @@ body{
     margin-right: 20px;
 }
 
+.javascript-skills-list{
+    margin-left: 20px;
+}
+
+.skills-list{
+    font-family: bit5x5, fantasy;
+}
+
+.skill{
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    opacity: 0.6;
+    transition: all 0.2s ease-in-out;
+}
+
+.skill:hover{
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.skill-meter{
+    border-image: url("/images/healthbar.png") 1 2 1 2 fill stretch;
+    /*   border-image: url(http://www.css3.info/wp-content/uploads/2007/09/border.png) 25 25 25 25 fill round; */
+    border-image-width:6px 12px;
+    border-image-outset:6px 6px;
+    flex-grow: 1;
+    height: 20px;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    color:black;
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin:  6px 12px;
+
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    background-repeat: no-repeat;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+    z-index: 10;
+}
+
+#navbar{
+    background: white;
+    padding-bottom: 20px;
+    font-family: bit5x5, fantasy;
+}
+
+.arrow-icon{
+    background: url("/icons/arrow.png") no-repeat;
+    background-size: contain;
+    width: 15px;
+    height: 25px;
+    margin-right: 10px;
+    transform: rotate(90deg);
+}
+
+.inactive .arrow-icon{
+    transform: rotate(0);
+}

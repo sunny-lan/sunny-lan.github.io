@@ -16,7 +16,26 @@ function getCoords(elem) { // crossbrowser version
     return {top: Math.round(top), left: Math.round(left)};
 }
 
+function isElementInViewport (el) {
+
+    //special bonus for those using jQuery
+    if (typeof jQuery === "function" && el instanceof jQuery) {
+        el = el[0];
+    }
+
+    var rect = el.getBoundingClientRect();
+
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
+    );
+}
+
 document.addEventListener("DOMContentLoaded", function () {
+
+
     const coll = document.getElementsByClassName("collapsible");
 
     for (let i = 0; i < coll.length; i++) {
@@ -42,6 +61,17 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             document.body.style.paddingTop = 0;
             navbar.classList.remove("sticky");
+        }
+
+        const videos=document.getElementsByTagName('video');
+        for(let i=0;i<videos.length;i++){
+            if(isElementInViewport(videos[i])){
+                if(videos[i].paused)
+                videos[i].play();
+            }else{
+                if(!videos[i].paused)
+                videos[i].pause();
+            }
         }
     };
 

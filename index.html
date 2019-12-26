@@ -40,74 +40,76 @@
 </div>
 
 <div id="navbar" class="tabs">
-    <div class="tab">About me/Skills</div>
-    <div class="tab">Projects</div>
-    <div class="tab">Job experience</div>
-    <div class="tab">Awards</div>
+    <div class="tab" data-tab-id="about-skills-block" data-default>About me/Skills</div>
+    <div class="tab" data-tab-id="projects-block">Projects</div>
+    <div class="tab" data-tab-id="experience-block">Job experience</div>
+    <div class="tab" data-tab-id="awards-block">Awards</div>
 </div>
 
 <div class="info-blocks">
-    <div class="about-me-block">
-        <a id="about-me"></a>
-        <h1>About me</h1>
-        <p>
-            I'm a student at UWaterloo Software Engineering.
-        </p>
-        <p>
-            I am experienced with many web technologies, and multiple aspects of web development, including design,
-            backend, frontend, database, and testing.
-        </p>
-        <p>
-            I am new to game development but very interested.
-            I have built a few games in Java and Unity, including a
-            multiplayer game as well as a VR game targeting the Oculus Quest.
-        </p>
+    <div id="about-skills-block" class="block">
+        <div id="about-me-block" class="block">
+            <a id="about-me"></a>
+            <h1>About me</h1>
+            <p>
+                I'm a student at UWaterloo Software Engineering.
+            </p>
+            <p>
+                I am experienced with many web technologies, and multiple aspects of web development, including design,
+                backend, frontend, database, and testing.
+            </p>
+            <p>
+                I am new to game development but very interested.
+                I have built a few games in Java and Unity, including a
+                multiplayer game as well as a VR game targeting the Oculus Quest.
+            </p>
+        </div>
+
+        <div id="skills-block" class="block">
+            <a id="skills"></a>
+            <h1>Skills</h1>
+            <ul class="skills-list">
+                <li class="skill">
+                    Java
+                    <div class="skill-meter">6 years</div>
+                </li>
+
+                <li>
+                    <div class="collapsible skill">
+                        <div class="arrow-icon pixel-image"></div>
+                        Web development
+                        <div class="skill-meter" style="background-size: 95%">4 years</div>
+                    </div>
+                    <ul class="collapsible-content javascript-skills-list">
+                        <li class="skill">Node.js - 3 years</li>
+                        <li class="skill">Typescript - 1 year</li>
+                        <li class="skill">React.js - 1 year</li>
+                        <li class="skill">Redis</li>
+                        <li class="skill">React native - 4 months</li>
+                        <li class="skill">PHP and SQL - 1 year
+                        </li>
+                    </ul>
+                </li>
+                <li class="skill">Unity (C#)
+                    <div class="skill-meter" style="background-size: 40%">4 months</div>
+                </li>
+                <li class="skill">C++
+                    <div class="skill-meter" style="background-size: 80%">3 years</div>
+                </li>
+                <li class="skill">OpenCV (Python)
+                    <div class="skill-meter" style="background-size: 50%">6 months</div>
+                </li>
+            </ul>
+        </div>
     </div>
 
-    <div class="skills-block">
-        <a id="skills"></a>
-        <h1>Skills</h1>
-        Click to expand.
-        <ul class="skills-list">
-            <li class="skill">
-                Java
-                <div class="skill-meter">6 years</div>
-            </li>
-
-            <li>
-                <div class="collapsible skill">
-                    <div class="arrow-icon pixel-image"></div>
-                    Web development
-                    <div class="skill-meter" style="background-size: 95%">4 years</div>
-                </div>
-                <ul class="javascript-skills-list">
-                    <li class="skill">Node.js - 3 years</li>
-                    <li class="skill">Typescript - 1 year</li>
-                    <li class="skill">React.js - 1 year</li>
-                    <li class="skill">Redis</li>
-                    <li class="skill">React native - 4 months</li>
-                    <li class="skill">PHP and SQL - 1 year
-                    </li>
-                </ul>
-            </li>
-            <li class="skill">Unity (C#)
-                <div class="skill-meter" style="background-size: 40%">4 months</div>
-            </li>
-            <li class="skill">C++
-                <div class="skill-meter" style="background-size: 80%">3 years</div>
-            </li>
-            <li class="skill">OpenCV (Python)
-                <div class="skill-meter" style="background-size: 50%">6 months</div>
-            </li>
-        </ul>
-    </div>
-
-    <div class="projects-block">
+    <div id="projects-block" class="block">
         <a id="projects"></a>
-        <h1>Projects</h1>
         <ul>
             <li>
                 <h2>E-Wall</h2>
+                <video src="/videos/EWall.mp4" controls></video>
+
 
                 <p>
                     <strong>What: </strong>
@@ -140,12 +142,13 @@
                 <p>
                     <strong>How: </strong>
                     The server is written in Typescript and runs on Node.js. It communicates through
-                    WebSockets with an <a href="https://en.wikipedia.org/wiki/ESP8266">ESP8266</a> which monitors and controls whether the door is open.
+                    WebSockets with an <a href="https://en.wikipedia.org/wiki/ESP8266">ESP8266</a> which monitors and
+                    controls whether the door is open.
                     The web interface is written in pure Javascript and HTML, making it easy
                     for users to customize and control their own things.
                 </p>
 
-                <a href="https://github.com/sunny-lan/grage" >github.com/sunny-lan/grage</a>
+                <a href="https://github.com/sunny-lan/grage">github.com/sunny-lan/grage</a>
             </li>
 
             <li>
@@ -161,15 +164,15 @@
                     <strong>How: </strong>
                     Written in Java. Web scraping done using JSoup. User interface build around JavaFX.
                 </p>
-                <a href="https://github.com/sunny-lan/Tyanide" >github.com/sunny-lan/Tyanide</a>
+                <a href="https://github.com/sunny-lan/Tyanide">github.com/sunny-lan/Tyanide</a>
             </li>
         </ul>
     </div>
 
 
-    <div class="experience-block">
+    <div id="experience-block" class="block">
         <a id="experience"></a>
-        <h1>Job Experience</h1>
+        <!--<h1>Job Experience</h1>-->
         <ul class="experience-list">
             <li>
                 <h2>Triway Education</h2>
@@ -196,10 +199,10 @@
         </ul>
     </div>
 
-    <div class="awards-block">
+    <div id="awards-block" class="block">
         <a id="awards"></a>
-        <h1>Awards</h1>
-        <ul >
+        <!--<h1>Awards</h1>-->
+        <ul>
             <li>
                 <h2>CCO Silver</h2>
                 <span class="sub-text">2019</span>

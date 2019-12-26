@@ -46,199 +46,200 @@
     <div class="tab" data-tab-id="awards-block">Awards</div>
 </div>
 
-<div class="info-blocks">
-    <div id="about-skills-block" class="block">
-        <div id="about-me-block" class="block">
-            <a id="about-me"></a>
-            <h1>About me</h1>
-            <p>
-                I'm a student at UWaterloo Software Engineering.
-            </p>
-            <p>
-                I am experienced with many web technologies, and multiple aspects of web development, including design,
-                backend, frontend, database, and testing.
-            </p>
-            <p>
-                I am new to game development but very interested.
-                I have built a few games in Java and Unity, including a
-                multiplayer game as well as a VR game targeting the Oculus Quest.
-            </p>
-        </div>
-
-        <div id="skills-block" class="block">
-            <a id="skills"></a>
-            <h1>Skills</h1>
-            <ul class="skills-list">
-                <li class="skill">
-                    Java
-                    <div class="skill-meter">6 years</div>
-                </li>
-
-                <li>
-                    <div class="collapsible skill">
-                        <div class="arrow-icon pixel-image"></div>
-                        Web development
-                        <div class="skill-meter" style="background-size: 95%">4 years</div>
-                    </div>
-                    <ul class="collapsible-content javascript-skills-list">
-                        <li class="skill">Node.js - 3 years</li>
-                        <li class="skill">Typescript - 1 year</li>
-                        <li class="skill">React.js - 1 year</li>
-                        <li class="skill">Redis</li>
-                        <li class="skill">React native - 4 months</li>
-                        <li class="skill">PHP and SQL - 1 year
-                        </li>
-                    </ul>
-                </li>
-                <li class="skill">Unity (C#)
-                    <div class="skill-meter" style="background-size: 40%">4 months</div>
-                </li>
-                <li class="skill">C++
-                    <div class="skill-meter" style="background-size: 80%">3 years</div>
-                </li>
-                <li class="skill">OpenCV (Python)
-                    <div class="skill-meter" style="background-size: 50%">6 months</div>
-                </li>
-            </ul>
-        </div>
+<!--<div class="info-blocks">-->
+<div class="content">
+<div id="about-skills-block" class="block">
+    <div id="about-me-block">
+        <a id="about-me"></a>
+        <h2>About me</h2>
+        <p>
+            I'm a student at UWaterloo Software Engineering.
+        </p>
+        <p>
+            I am experienced with many web technologies, and multiple aspects of web development, including design,
+            backend, frontend, database, and testing.
+        </p>
+        <p>
+            I am new to game development but very interested.
+            I have built a few games in Java and Unity, including a
+            multiplayer game as well as a VR game targeting the Oculus Quest.
+        </p>
     </div>
 
-    <div id="projects-block" class="block">
-        <a id="projects"></a>
-        <ul>
-            <li>
-                <h2>E-Wall</h2>
-                <video src="/videos/EWall.mp4" controls></video>
-
-
-                <p>
-                    <strong>What: </strong>
-                    A set of games where characters can interact with physical elements such as a
-                    level drawn on a whiteboard or your hand.
-                    Cutouts with enemies drawn on them get loaded into the game;
-                    they can shoot at you and you can kill them.
-                </p>
-
-                <p>
-                    <strong>How: </strong>
-                    Written in Python.
-                    Used OpenCV's Sobel edge detection and FLANN based object matching to detect
-                    real world elements. Graphics are displayed using pygame.
-                    Built with a team of 5 people.
-                </p>
-                <a href="https://github.com/RichardYSun/E-Wall">github.com/RichardYSun/E-Wall</a>
-
+    <div id="skills-block" >
+        <a id="skills"></a>
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li class="skill">
+                Java
+                <div class="skill-meter">6 years</div>
             </li>
 
             <li>
-                <h2>Grage</h2>
-                <p>
-                    <strong>What: </strong>
-                    Controls the garage door at my house through a web app.
-                    Not just for garage doors - for example, wire it up to check if the stove was left on.
-                    Triggers can also be set up to do stuff when something unusual happens (eg. text you).
-                </p>
-
-                <p>
-                    <strong>How: </strong>
-                    The server is written in Typescript and runs on Node.js. It communicates through
-                    WebSockets with an <a href="https://en.wikipedia.org/wiki/ESP8266">ESP8266</a> which monitors and
-                    controls whether the door is open.
-                    The web interface is written in pure Javascript and HTML, making it easy
-                    for users to customize and control their own things.
-                </p>
-
-                <a href="https://github.com/sunny-lan/grage">github.com/sunny-lan/grage</a>
+                <div class="collapsible skill">
+                    <div class="arrow-icon pixel-image"></div>
+                    Web development
+                    <div class="skill-meter" style="background-size: 95%">4 years</div>
+                </div>
+                <ul class="collapsible-content javascript-skills-list">
+                    <li class="skill">Node.js - 3 years</li>
+                    <li class="skill">Typescript - 1 year</li>
+                    <li class="skill">React.js - 1 year</li>
+                    <li class="skill">Redis</li>
+                    <li class="skill">React native - 4 months</li>
+                    <li class="skill">PHP and SQL - 1 year
+                    </li>
+                </ul>
             </li>
-
-            <li>
-                <h2>Tyanide</h2>
-                <p>
-                    <strong>What: </strong>
-                    A desktop client for students to view their grades. Notifies you when marks are updated.
-                    Has better calculation features than the original site, allowing students
-                    to see how a certain test result could affect their grade.
-                </p>
-
-                <p>
-                    <strong>How: </strong>
-                    Written in Java. Web scraping done using JSoup. User interface build around JavaFX.
-                </p>
-                <a href="https://github.com/sunny-lan/Tyanide">github.com/sunny-lan/Tyanide</a>
+            <li class="skill">Unity (C#)
+                <div class="skill-meter" style="background-size: 40%">4 months</div>
+            </li>
+            <li class="skill">C++
+                <div class="skill-meter" style="background-size: 80%">3 years</div>
+            </li>
+            <li class="skill">OpenCV (Python)
+                <div class="skill-meter" style="background-size: 50%">6 months</div>
             </li>
         </ul>
-    </div>
-
-
-    <div id="experience-block" class="block">
-        <a id="experience"></a>
-        <!--<h1>Job Experience</h1>-->
-        <ul class="experience-list">
-            <li>
-                <h2>Triway Education</h2>
-                <span class="sub-text">Tutor (March 2019 - June 2019)</span>
-                <p>Taught Java to classes of around 10 students.
-                    Gave private lessons on contest algorithms.</p>
-                <a href="https://triwayeducation.com/">triwayeducation.com</a>
-            </li>
-            <li>
-                <h2>Principle Inc.</h2>
-                <span class="sub-text">Co-op placement (Sep 2017 - Feb 2018)</span>
-                <p>Worked on event ticket management admin interface, including writing database queries
-                    to load data into the UI.
-                    Also designed a mobile app to potentially replace the current version.
-                </p>
-                <a href="http://www.principle.com/">principle.com</a>
-            </li>
-            <li>
-                <h2>Duowei Education</h2>
-                <span class="sub-text">Assistant tutor (July 2016 - April 2017)</span>
-                <p>Helped teach students the basics of Java</p>
-                <a href="http://duoweischool.com/">duoweischool.com</a>
-            </li>
-        </ul>
-    </div>
-
-    <div id="awards-block" class="block">
-        <a id="awards"></a>
-        <!--<h1>Awards</h1>-->
-        <ul>
-            <li>
-                <h2>CCO Silver</h2>
-                <span class="sub-text">2019</span>
-                <p>Qualified to compete at CCO by being one of the top 30
-                    contestants on the CCC (Canadian Computing Competition) Senior division.
-                </p>
-                <p>
-                    The CCC is a nation-wide programming contest involving
-                    problems requiring algorithm knowledge and strong problem solving skills.
-                </p>
-            </li>
-            <li>
-                <h2>CCO Bronze</h2>
-                <span class="sub-text">2018</span>
-            </li>
-
-            <li>
-                <h2>CanHacks/PicoCTF 2nd Place</h2>
-                <span class="sub-text">2018</span>
-                <p>
-                    Placed second in Canada at PicoCTF. PicoCTF is a contest
-                    where students solve challenges involving cybersecurity related topics such as
-                    binary exploitation and webapp exploitation, forensics and reverse engineering.
-                </p>
-            </li>
-        </ul>
-    </div>
-
-
-    <div class="about-block">
-        <h1>About this site</h1>
-        <span class="sub-text">Designed by Sunny Lan | 2019</span>
-        <p></p>
     </div>
 </div>
 
+<div id="projects-block" class="block">
+    <a id="projects"></a>
+    <ul>
+        <li>
+            <h2>E-Wall</h2>
+            <video src="/videos/EWall.mp4" controls></video>
 
+
+            <p>
+                <strong>What: </strong>
+                A set of games where characters can interact with physical elements such as a
+                level drawn on a whiteboard or your hand.
+                Cutouts with enemies drawn on them get loaded into the game;
+                they can shoot at you and you can kill them.
+            </p>
+
+            <p>
+                <strong>How: </strong>
+                Written in Python.
+                Used OpenCV's Sobel edge detection and FLANN based object matching to detect
+                real world elements. Graphics are displayed using pygame.
+                Built with a team of 5 people.
+            </p>
+            <a href="https://github.com/RichardYSun/E-Wall">github.com/RichardYSun/E-Wall</a>
+
+        </li>
+
+        <li>
+            <h2>Grage</h2>
+            <p>
+                <strong>What: </strong>
+                Controls the garage door at my house through a web app.
+                Not just for garage doors - for example, wire it up to check if the stove was left on.
+                Triggers can also be set up to do stuff when something unusual happens (eg. text you).
+            </p>
+
+            <p>
+                <strong>How: </strong>
+                The server is written in Typescript and runs on Node.js. It communicates through
+                WebSockets with an <a href="https://en.wikipedia.org/wiki/ESP8266">ESP8266</a> which monitors and
+                controls whether the door is open.
+                The web interface is written in pure Javascript and HTML, making it easy
+                for users to customize and control their own things.
+            </p>
+
+            <a href="https://github.com/sunny-lan/grage">github.com/sunny-lan/grage</a>
+        </li>
+
+        <li>
+            <h2>Tyanide</h2>
+            <p>
+                <strong>What: </strong>
+                A desktop client for students to view their grades. Notifies you when marks are updated.
+                Has better calculation features than the original site, allowing students
+                to see how a certain test result could affect their grade.
+            </p>
+
+            <p>
+                <strong>How: </strong>
+                Written in Java. Web scraping done using JSoup. User interface build around JavaFX.
+            </p>
+            <a href="https://github.com/sunny-lan/Tyanide">github.com/sunny-lan/Tyanide</a>
+        </li>
+    </ul>
+</div>
+
+
+<div id="experience-block" class="block">
+    <a id="experience"></a>
+    <!--<h1>Job Experience</h1>-->
+    <ul class="experience-list">
+        <li>
+            <h2>Triway Education</h2>
+            <span class="sub-text">Tutor (March 2019 - June 2019)</span>
+            <p>Taught Java to classes of around 10 students.
+                Gave private lessons on contest algorithms.</p>
+            <a href="https://triwayeducation.com/">triwayeducation.com</a>
+        </li>
+        <li>
+            <h2>Principle Inc.</h2>
+            <span class="sub-text">Co-op placement (Sep 2017 - Feb 2018)</span>
+            <p>Worked on event ticket management admin interface, including writing database queries
+                to load data into the UI.
+                Also designed a mobile app to potentially replace the current version.
+            </p>
+            <a href="http://www.principle.com/">principle.com</a>
+        </li>
+        <li>
+            <h2>Duowei Education</h2>
+            <span class="sub-text">Assistant tutor (July 2016 - April 2017)</span>
+            <p>Helped teach students the basics of Java</p>
+            <a href="http://duoweischool.com/">duoweischool.com</a>
+        </li>
+    </ul>
+</div>
+
+<div id="awards-block" class="block">
+    <a id="awards"></a>
+    <!--<h1>Awards</h1>-->
+    <ul>
+        <li>
+            <h2>CCO Silver</h2>
+            <span class="sub-text">2019</span>
+            <p>Qualified to compete at CCO by being one of the top 30
+                contestants on the CCC (Canadian Computing Competition) Senior division.
+            </p>
+            <p>
+                The CCC is a nation-wide programming contest involving
+                problems requiring algorithm knowledge and strong problem solving skills.
+            </p>
+        </li>
+        <li>
+            <h2>CCO Bronze</h2>
+            <span class="sub-text">2018</span>
+        </li>
+
+        <li>
+            <h2>CanHacks/PicoCTF 2nd Place</h2>
+            <span class="sub-text">2018</span>
+            <p>
+                Placed second in Canada at PicoCTF. PicoCTF is a contest
+                where students solve challenges involving cybersecurity related topics such as
+                binary exploitation and webapp exploitation, forensics and reverse engineering.
+            </p>
+        </li>
+    </ul>
+</div>
+
+
+<div id="about-block">
+    <h2>About this site</h2>
+    <span class="sub-text">Designed by Sunny Lan | 2019</span>
+    <p>All code and other assets are made by me, other than the fonts</p>
+</div>
+<!--</div>-->
+
+</div>
 </body>
 </html>

@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     window.onscroll = function () {
         if (window.pageYOffset >= sticky) {
+            if(window.innerWidth>500)
             document.body.style.paddingTop = h - 10 + 'px';
             navbar.classList.add("sticky")
         } else {
@@ -60,10 +61,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 tab.classList.add('inactive');
             }
             tab.onclick = function () {
-                // console.log("re");
-                const intro = document.getElementById('intro-block');
                 window.scrollTo({
-                    top: getCoords(intro).top + intro.clientHeight - tabset.clientHeight,
+                    top: getCoords(tabset).top -10,
                     left: 0,
                     behavior: 'smooth'
                 });

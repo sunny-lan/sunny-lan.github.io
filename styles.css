@@ -2,112 +2,117 @@
     font-family: bit5x5;
     src: url('fonts/bit5x5.otf')
 }
+
 @font-face {
     font-family: bit9x9;
     src: url('fonts/bit9x9.otf')
 }
+
 html {
     box-sizing: border-box;
 }
+
 *, *:before, *:after {
     box-sizing: inherit;
 }
 
-body{
+body {
     font-family: 'Inria Serif', serif;
     font-size: 18px;
 }
 
-h1{
+h1 {
     font-family: bit5x5, fantasy;
     font-size: 40px;
 }
 
-ul{
+ul {
     list-style-type: none;
     padding: 0;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-.collapsible-content.inactive{
+.collapsible-content.inactive {
     display: none;
 }
 
-.link-list a{
+.link-list a {
     color: white;
 }
-.link-list a:visited{
+
+.link-list a:visited {
     color: whitesmoke;
 }
-.link-list a:hover{
+
+.link-list a:hover {
     color: antiquewhite;
     font-weight: bold;
 }
 
-p{
+p {
     max-width: 600px;
 }
 
-.icon-text{
+.icon-text {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
 }
 
-.icon-text > *:first-child{
+.icon-text > *:first-child {
     margin-right: 10px;
 }
 
-.mail-icon{
+.mail-icon {
     width: 50px;
     height: 55px;
     background: url("/icons/mail-closed.png") no-repeat center;
     background-size: contain;
 }
 
-.mail-icon:hover{
+.mail-icon:hover {
     width: 50px;
     height: 55px;
     background: url("/icons/mail-open.png") no-repeat;
     background-size: contain;
 }
 
-.github-icon{
+.github-icon {
     width: 50px;
     height: 50px;
     background: url("/icons/octocat.gif") no-repeat;
     background-size: contain;
 }
 
-.file-icon{
+.file-icon {
     width: 50px;
     height: 50px;
     background: url("/icons/file-icon.png");
     background-size: contain;
 }
 
-.pixel-image{
+.pixel-image {
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     image-rendering: crisp-edges;
 }
 
-.subtitle-above{
+.subtitle-above {
     font-family: bit5x5, fantasy;
     font-size: 16px;
     margin-bottom: 10px;
 }
 
-.tabs{
+.tabs {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.tab{
+.tab {
     font-size: 25px;
     margin-right: 20px;
     margin-left: 20px;
@@ -120,33 +125,32 @@ p{
     transition: all 0.25s ease-in;
 }
 
-.tab:hover
-{
+.tab:hover {
     background-size: 100% 88%;
     transform: scale(1.1);
 }
 
-.tab:not(.inactive){
+.tab:not(.inactive) {
     background-size: 100% 88%;
 }
 
-h2{
+h2 {
     margin-bottom: 2px;
 }
 
-.sub-text{
+.sub-text {
     margin-top: 2px;
     color: darkslategray;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0;
 }
 
-#intro-block{
+#intro-block {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -155,101 +159,92 @@ body{
     /*background-attachment: fixed;*/
     min-height: 520px;
     color: white;
-    width: 100% ;
+    width: 100%;
 }
 
-#intro-block > .bigger-background{
+#intro-block > .bigger-background {
     background: url("/images/temp-bg.jpg");
 }
 
-.big-name{
+.big-name {
     font-family: bit5x5, fantasy;
     font-size: 70px;
     text-align: center;
 }
 
-.link-list{
+.link-list {
     display: flex;
     flex-direction: column;
     font-family: bit9x9, fantasy;
-    font-size: 20px;
 }
 
-.link-list > li{
+.link-list > li {
     transition: all 0.1s ease-in;
 }
 
-.link-list > li:hover{
+.link-list > li:hover {
     transform: scale(1.1);
 }
 
-.info-blocks{
-    padding-left: 40px;
-    padding-right: 40px;
-    display: flex;
-    /*width: 100%;*/
-    /*flex-wrap: wrap;*/
-    flex-direction: column;
-}
+/*.info-blocks{*/
+/*padding-left: 40px;*/
+/*padding-right: 40px;*/
+/*display: flex;*/
+/*!*width: 100%;*!*/
+/*!*flex-wrap: wrap;*!*/
+/*flex-direction: column;*/
+/*}*/
 
-.javascript-skills-list{
+.javascript-skills-list {
     margin-left: 20px;
 }
 
-.skills-list{
+.skills-list {
     font-family: bit5x5, fantasy;
 }
 
-.skill{
+.skill {
     display: flex;
     margin-bottom: 10px;
     align-items: center;
+    flex-wrap: wrap;
     /*flex-direction: column;*/
     opacity: 1;
     transition: all 0.2s ease-in-out;
 }
 
-.skill:hover{
+.skill:hover {
     opacity: 1;
     transform: scale(1.05);
 }
 
-.skill-meter{
+.skill-meter {
     border-image: url("/images/healthbar.png") 1 2 1 2 fill stretch;
-    /*   border-image: url(http://www.css3.info/wp-content/uploads/2007/09/border.png) 25 25 25 25 fill round; */
-    border-image-width:6px 12px;
-    border-image-outset:6px 6px;
+    border-image-width: 6px 12px;
+    border-image-outset: 6px 6px;
     flex-grow: 1;
     height: 20px;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     image-rendering: crisp-edges;
-    color:black;
+    color: black;
     display: flex;
     align-items: center;
     padding-right: 10px;
     padding-left: 10px;
-    margin:  6px 12px;
+    margin: 6px 12px;
 
     background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
     background-repeat: no-repeat;
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    box-shadow: 0 5px 5px rgba(0,0,0,0.1);
-    z-index: 10;
-}
-
-#navbar{
+#navbar {
     background: white;
     padding-bottom: 20px;
     font-family: bit5x5, fantasy;
 }
 
-.arrow-icon{
+.arrow-icon {
     background: url("/icons/arrow.png") no-repeat;
     background-size: contain;
     width: 15px;
@@ -258,42 +253,63 @@ body{
     transform: rotate(90deg);
 }
 
-.inactive .arrow-icon{
+.inactive .arrow-icon {
     transform: rotate(0);
 }
 
-#about-skills-block{
+#about-skills-block {
     display: flex;
     flex-direction: column;
 }
 
-#skills-block{
-    min-width: 400px;
+#about-block{
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-video{
+video {
     width: 100%;
     max-width: 600px;
-    outline:0;
+    outline: 0;
+}
+
+@media only screen and (min-width: 500px) {
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+    }
+}
+
+@media only screen and (min-width: 300px) {
+    .link-list {
+        font-size: 20px;
+    }
+}
+
+.block {
+    min-height: 100vh;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 @media only screen and (min-width: 888px) {
-    #about-skills-block{
+    #about-skills-block {
         flex-direction: row;
     }
-    #about-me-block{
+
+    #about-me-block {
         /*flex:1;*/
     }
-    #skills-block{
+
+    #skills-block {
         /*flex:1;*/
-        margin-left: 20px;
+        /*margin-left: 20px;*/
     }
 }
 
-.block{
-    min-height: 100vh;
-}
-
-.block.inactive{
+.block.inactive {
     display: none !important;
 }

@@ -161,11 +161,6 @@ body {
     color: white;
     width: 100%;
 }
-
-#intro-block > .bigger-background {
-    background: url("/images/bg.jpg");
-}
-
 .big-name {
     font-family: bit5x5, fantasy;
     font-size: 70px;

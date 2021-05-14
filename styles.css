@@ -191,6 +191,16 @@ body {
 /*flex-direction: column;*/
 /*}*/
 
+#me-image{
+    max-width: 200px;
+    max-height: 200px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 50px;
+    border-radius: 50%;
+}
+
 .javascript-skills-list {
     margin-left: 20px;
 }
@@ -276,6 +286,9 @@ video {
         width: 100%;
         box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
         z-index: 10;
+    }
+    #about-skills-block{
+        align-items: center;
     }
 }
 

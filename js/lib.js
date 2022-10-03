@@ -65,12 +65,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const videos=document.getElementsByTagName('video');
         for(let i=0;i<videos.length;i++){
-            if(isElementInViewport(videos[i])){
-                if(videos[i].paused)
-                videos[i].play();
-            }else{
-                if(!videos[i].paused)
-                videos[i].pause();
+            try {
+                if (isElementInViewport(videos[i])) {
+                    if (videos[i].paused)
+                        videos[i].play();
+                } else {
+                    if (!videos[i].paused)
+                        videos[i].pause();
+                }
+            }catch(a){
+
             }
         }
     };
